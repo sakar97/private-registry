@@ -1,0 +1,6 @@
+[docker]
+192.168.1.41 ansible_user=jenkins
+
+[worker]
+192.168.1.43 ansible_user=jenkins ansible_become=true ansible_become_pass=root123
+192.168.1.44 ansible_user=jenkins ansible_become=true ansible_become_pass=root123

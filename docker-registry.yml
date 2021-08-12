@@ -1,0 +1,8 @@
+---
+ - hosts: docker
+   roles:
+       - docker-registry
+ - hosts: worker
+   become: yes
+   roles:
+       - docker-registry-worker
